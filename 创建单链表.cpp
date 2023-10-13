@@ -8,7 +8,7 @@ typedef  int  ElemType;              /*假定线性表元素的类型为整型*/
 
 typedef  struct  LNode {   //定义单链表节点类型
 	ElemType  data;
-	struct  LNode* next;  //指向后继节点
+	struct  LNode* link;  //指向后继节点
 }LinkList;  //链表类型
 
 
@@ -18,12 +18,12 @@ void CreateListF(LinkList*& L, ElemType* a, int n) {
 	LinkList* s;
 	int i;
 	L = (LinkList*)malloc(sizeof(LinkList));
-	L->next = NULL;
+	L->link = NULL;
 	for (i = 0; i < n; i++) {
 		s = (LinkList*)malloc(sizeof(LinkList));
 		s->data = a[i];
-		s->next = L->next;
-		L->next = s;
+		s->link = L->link;
+		L->link = s;
 	}
 }
 //尾插法创建单链表 
@@ -35,18 +35,18 @@ void CreateListR(LinkList*& L, ElemType* a, int n) {
 	for (i = 0; i < n; i++) {
 		s = (LinkList*)malloc(sizeof(LinkList));
 		s->data = a[i];
-		tc->next = s;
+		tc->link = s;
 		tc = s;
 	}
-	tc->next = NULL;
+	tc->link = NULL;
 }
 
 //输出链表
 void DispList(LinkList* L) {
-	LinkList* p = L->next;
+	LinkList* p = L->link;
 	while (p != NULL) {
 		cout << p->data << " ";
-		p = p->next;
+		p = p->link;
 	}
 	cout << endl;
 }

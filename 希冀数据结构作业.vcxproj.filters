@@ -159,5 +159,11 @@
     <ClCompile Include="单链表划分2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="多项式相加.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="链表最大移动.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
