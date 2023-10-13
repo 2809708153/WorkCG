@@ -29,7 +29,7 @@ void CreateListF(LinkList*& L, ElemType* a, int n) {
 //尾插法创建单链表 
 void CreateListR(LinkList*& L, ElemType* a, int n) {
 	LinkList* s, * tc;
-	int i;
+	int i; 
 	L = (LinkList*)malloc(sizeof(LinkList));
 	tc = L;
 	for (i = 0; i < n; i++) {

@@ -7,7 +7,7 @@ typedef struct node {
     datatype data;
     node* link;
 }LinkNode;
-
+ 
 //≥ı ºªØ¡¥±Ì
 void InitList(LinkNode*& L) {
 	L = (LinkNode*)malloc(sizeof(LinkNode));
