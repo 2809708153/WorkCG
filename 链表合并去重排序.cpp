@@ -107,3 +107,122 @@ int main() {
 	DispList(L3);
 	return 0;
 }
+
+/*
+//法二
+#define _CRT_SECURE_NO_WARNINGS 1
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct List {
+	int data;
+	struct List* next;
+}list;
+
+void init(list** L) {
+	(*L) = (list*)malloc(sizeof(list));
+	(*L)->next = NULL;
+}
+//尾插
+void CreatF(list** L, int* arr, int n) {
+	list* tc, * s;
+	tc = *L;
+	int i = 0;
+	while (i < n) {
+		s = (list*)malloc(sizeof(list));
+		s->data = arr[i++];
+		tc->next = s;
+		s->next = NULL;
+		tc = s;
+	}
+}
+//合并函数
+void Merge(list* a, list* b, list** c) {
+	list* p, * q, * s, * tc = *c;
+	p = a->next;
+	q = b->next;
+	while (p && q) {
+		if (p->data < q->data) {
+			s = (list*)malloc(sizeof(list));
+			s->data = p->data;
+			tc->next = s;
+			tc = s;
+			p = p->next;
+		}
+		else if (p->data > q->data) {
+			s = (list*)malloc(sizeof(list));
+			s->data = q->data;
+			tc->next = s;
+			tc = s;
+			q = q->next;
+		}
+		else if (p->data == q->data) {
+			s = (list*)malloc(sizeof(list));
+			s->data = p->data;
+			tc->next = s;
+			tc = s;
+			p = p->next;
+			q = q->next;
+		}
+	}
+	tc->next = NULL;
+	if (p) {
+		tc->next = p;
+	}
+	if (q) {
+		tc->next = q;
+	}
+}
+//去重复
+void F(list** L) {
+	list* pre = (*L)->next, * p = pre->next;
+	while (p) {
+		if (p->data == pre->data) {
+			pre->next = p->next;
+			p = pre->next;
+		}
+		else {
+			p = p->next;
+			pre = pre->next;
+		}
+	}
+}
+void Disp(list* L) {
+	list* p = L->next;
+	while (p) {
+		printf("%d ", p->data);
+		p = p->next;
+	}
+	printf("\n");
+}
+int main() {
+	int a[1000], b[1000];
+	list* r1, * r2, * r3;
+	init(&r1);
+	init(&r2);
+	init(&r3);
+	int i = 0;
+	char ch;
+	while (1) {
+		scanf("%d", &a[i++]);
+		ch = getchar();
+		if (ch == '\n')
+			break;
+	}
+	CreatF(&r1, a, i);
+	i = 0;
+	while (1) {
+		scanf("%d", &b[i++]);
+		ch = getchar();
+		if (ch == '\n')
+			break;
+	}
+	CreatF(&r2, b, i);
+	Merge(r1, r2, &r3);
+	F(&r3);
+	Disp(r3);
+	system("pause");
+	return 0;
+}
+*/

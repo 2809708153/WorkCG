@@ -98,3 +98,118 @@ int main() {
 	DispList(L3);
 	return 0;
 }
+
+
+
+/*法二
+#define _CRT_SECURE_NO_WARNINGS  1
+#include<stdio.h>
+#include<stdlib.h>
+typedef struct node {
+	int data;
+	struct node* next;
+}Node;
+//初始化 
+Node* init()
+{
+	Node* head = (Node*)malloc(sizeof(Node));
+	head->next = NULL;
+	return head;
+}
+//输入线性表 
+Node* creat(Node* head)  
+{
+	int a;
+	Node* p = head;
+	//尾插法
+	char c = ' ';    //以换行作为结束
+	while (c != '\n')
+	{
+		scanf("%d", &a);
+		Node* pre = (Node*)malloc(sizeof(Node));
+		pre->next = NULL;
+		pre->data = a;
+		p->next = pre;
+		p = pre;
+		c = getchar();
+	}
+	return head;
+}
+//求两集合并集
+Node* comb(Node* headA, Node* headB)
+{
+	Node* pa = headA->next;
+	Node* pb = headB->next;
+	Node* newpc = (Node*)malloc(sizeof(Node));
+	Node* pc = newpc;//将a、b的数据保存到新的线性表c中
+	int i = 0;
+	while (pa != NULL && pb != NULL)
+	{
+
+		Node* s = (Node*)malloc(sizeof(Node));
+
+		if (i % 2 == 0)
+		{
+			s->data = pa->data;
+			pc->next = s;
+			pa = pa->next;
+			pc = pc->next;
+		}
+		else if (i % 2 != 0)
+		{
+			s->data = pb->data;
+			pc->next = s;
+			pb = pb->next;
+			pc = pc->next;
+		}
+		i++;
+	}
+	//若线性表A、B长度不等
+	if (pa != NULL)
+	{
+		pc->next = pa;
+	}
+	else if (pb != NULL)
+	{
+		pc->next = pb;
+	}
+	pc = pc->next;
+	return newpc;
+}
+//输出线性表
+void output(Node* head)
+{
+	Node* p = head->next;
+	while (p != NULL)
+	{
+		printf("%d ", p->data);
+		p = p->next;
+	}
+	printf("\n");
+}
+int main()
+{
+	Node* LA;
+	Node* LB;
+	Node* LC;
+	//int a, b;
+	//scanf("%d %d", &a, &b);//线性表ab的长度
+	LA = init();
+	LB = init();
+	LA = creat(LA);
+	LB = creat(LB);
+	printf("L1：");
+	output(LA);
+	printf("L2：");
+	output(LB);
+	printf("L1和L2合并后：\n");
+	printf("L1：");
+	output(LA);
+	printf("L2：");
+	output(LB);
+	LC = comb(LA, LB);
+	printf("L3：");
+	output(LC);
+	return 0;
+}
+*/

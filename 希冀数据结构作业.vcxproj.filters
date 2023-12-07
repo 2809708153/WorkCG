@@ -165,5 +165,140 @@
     <ClCompile Include="链表最大移动.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="多项式求和2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="练习.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="队列元素逆置.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="栈操作.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="栈计算器.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="逆波兰表达式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="后缀表达式.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="括号比配.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串压缩.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="螺旋矩阵.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="矩阵加减.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="子矩阵判断.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="稀疏矩阵相乘.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="最大子列和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="易位词判断.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="消除游戏.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串镜像.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串匹配.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="埃拉托色尼筛法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串替换.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="密码Playfair.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="最优潜水策略.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="水壶问题.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="旅行的Jill.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串匹配.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="n皇后.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="稀疏矩阵转置.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="稀疏矩阵加法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串处理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树中后前.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树前中后.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树前后中.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="哈夫曼编码.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树极差绝对值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树反向层次遍历.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树子树判断.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树最大结点和子树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="二叉树非叶子结点值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="普里姆算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="迪杰斯特拉算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

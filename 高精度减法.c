@@ -60,3 +60,20 @@ int main(){
         printf("%d", c[j]);
     return 0;
 }
+
+//大数相加
+//string addStrings(string& num1, string& num2) {
+//    int i = num1.size() - 1, j = num2.size() - 1, add = 0;
+//    string ans;
+//    while (i >= 0 || j >= 0 || add != 0) {
+//        int x = i >= 0 ? num1.at(i) - '0' : 0;
+//        int y = j >= 0 ? num2.at(j) - '0' : 0;
+//        int result = x + y + add;
+//        ans.push_back(char(result % 10 + 48));
+//        add = result / 10;
+//        i--;
+//        j--;
+//    }
+//    reverse(ans.begin(), ans.end());
+//    return ans;
+//}

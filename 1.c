@@ -7,6 +7,6 @@
 int main() {
     char str[10000];
 	gets(str);
-	int i = 0;
-	printf("%s", str);
+	puts(str);
+	return 0;
 }
